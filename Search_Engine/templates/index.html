@@ -1,0 +1,30 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Search Engine{% endblock %}
+{% block scripts%}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+{% endblock %}
+
+
+{% block content %}
+<div class="container" style="margin-top: 10%">
+<h1 style="text-align: center" >FIND IT</h1>
+
+<form action="" method="post">
+	<div class="form-group">
+    <input type="text" name="text_query" class="form-control" placeholder="Enter something" >
+  </div>
+    <button type="submit" class="btn btn-success btn-block" >Search</button>
+
+</form>
+
+</div>
+<div class="container" style="position: fixed; bottom: 0; width: 100%">
+	<hr>
+	<p  class="text-muted" style="text-align: center" >Search over {{docs_num}} documents</p>
+	</div>
+{% endblock %}
+
+
